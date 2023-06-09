@@ -1,16 +1,26 @@
+<link rel="stylesheet" href="css/createProject.css">
+
 <div>
     <div id="create-form">
-        <form action="/create/newproject" method="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Enter Project Name..." required>
-            <br>
-            <label for="description">Description</label>
-            <textarea type="text" name="description" placeholder="Project Description..." required rows="5" cols="50"></textarea>
-            <br>
-            <label for="author">Author</label>
-            <input type="text" name="author" placeholder="Enter Author Name..." required>
-
-            <input type="submit" value="Create Project">
+        <form id="main-form" action="/create/newproject" method="post">
+            <div>
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" placeholder="Enter Project Name..." required>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <br>
+                <textarea type="text" name="description" placeholder="Project Description..." required rows="5" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <br>
+                <input type="text" name="author" placeholder="Enter Author Name..." required>
+            </div>
+            <div>
+            <button type="submit"><p>Create Project</p></button>
+            </div>
         </form>
     </div>
 </div>

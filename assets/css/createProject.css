@@ -1,0 +1,45 @@
+#create-form {
+  border: 1px solid white;
+  background: linear-gradient(to right, black, #e4e4e4);
+  color: white;
+  position: relative;
+  top: 4rem;
+  left: 30%;
+  height: 35rem;
+  width: 35rem;
+  font-weight: 100;
+  letter-spacing: 1px; }
+  #create-form #main-form {
+    font-size: larger;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    #create-form #main-form input {
+      width: 29.25em;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      margin: 10px;
+      color: white; }
+    #create-form #main-form input:focus {
+      outline: none;
+      font-size: medium; }
+    #create-form #main-form textarea {
+      margin: 10px;
+      background-color: transparent;
+      border: 1px solid white; }
+    #create-form #main-form textarea:focus {
+      outline: none;
+      color: white;
+      font-size: large; }
+  #create-form button {
+    height: 4rem;
+    width: 10rem;
+    border: none; }
+    #create-form button p {
+      font-size: 20px;
+      font-weight: lighter;
+      font-family: Arial, Helvetica, sans-serif; }

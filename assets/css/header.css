@@ -1,5 +1,5 @@
 #layout-header .navbar {
-  background: linear-gradient(to right, #100f0f, #564d4d);
+  background: linear-gradient(to right, black, white);
   height: 2.7em;
   display: flex;
   justify-content: space-between;
