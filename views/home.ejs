@@ -1,6 +1,15 @@
+<link rel="stylesheet" href="/css/home.css">
 
- <% for(i of project){ %>
-    
+<div id="container">
+  
+   <% for(i of project){ %>
+      <div id="items">
+
+        <p id="title"> <%= i.name %> </p>
+        <p id="author"> created by <%= i.author %> </p>
+        <p id="desc"> <%= i.description %> </p>
+         
+      </div>
+   <% } %>
    
-
- <% } %>
+</div>
