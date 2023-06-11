@@ -15,7 +15,7 @@
 <% if (showPopup) { %>
     <div class="popup-container">
         <div class="heading"><p>Create an Issue</p></div>
-            <form action="" >
+            <form action="/projectdetails/<%=project.id%>/popup/createissue" method="post">
                 <div id="issue-form">
                 <div id="labels">
                     <label for="title">Title</label>
@@ -62,6 +62,8 @@
                 <div>
                     <input type="text" name="author" placeholder="Add an author" required>
                 </div>
+
+                <input type="hidden" name="project" value="<%=project.id%>">
 
                 </div>
                 </div>
