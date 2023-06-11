@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="/css/projectDetails.css">
+
+<div id="container">
+        <p class="bar">Project :  <%= project.name %> </p>
+        <p class="bar">Author :  <%= project.author %> </p>
+        <p class="desc"><span>Description : </span> <%= project.description %> </p>
+</div>
+
+<% if(!showPopup){ %>
+<button><a href="<%=project.id%>/popup">Click Me</a></button>
+<% } %>
+
+<link rel="stylesheet" href="/css/popup.css">
+
+<% if (showPopup) { %>
+    <div class="popup-container">
+        <div class="heading"><p>Create an Issue</p></div>
+            <form action="" >
+                <div id="issue-form">
+                <div id="labels">
+                    <label for="title">Title</label>
+                    <label class="desc" for="description">Description</label>
+                    <label class="add-label">Add Labels</label>
+                    <label for="author">Author</label>
+                </div>
+
+                <div id="details">
+                <div>
+                <input type="text" name="title" placeholder="Add a title" required>
+                </div>
+
+                <div>
+                    <textarea type="text" name="description" rows="7" cols="30" placeholder="Describe the issue" required></textarea>
+                </div>
+
+                <div id="checks">
+                    <ul>
+                        <li>
+                          <input type="checkbox" id="bug" name="bug">
+                          <label for="bug">Bug</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="ui-improvement" name="ui-improvement">
+                          <label for="ui-improvement">UI Improvement</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="API-check" name="API-check">
+                          <label for="API-check">API Check</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="responsiveness" name="responsiveness">
+                            <label for="responsiveness">Responsiveness</label>
+                          </li>
+                          <li>
+                          <input type="checkbox" id="asynchronous-tasks" name="asynchronous-tasks">
+                          <label for="asynchronous-tasks">Asynchronous Tasks</label>
+                        </li>
+                      </ul>
+                      
+                </div>
+
+                <div>
+                    <input type="text" name="author" placeholder="Add an author" required>
+                </div>
+
+                </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="close-btn">Submit</button>
+                </div>
+                    
+            </form>
+
+    </div>
+<% } %>

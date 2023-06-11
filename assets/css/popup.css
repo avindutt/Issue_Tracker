@@ -1,0 +1,48 @@
+.popup-container {
+  margin-top: 3em;
+  margin-left: 2em;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 0, 0.823);
+  height: 32em;
+  width: 22em;
+  padding: 10px; }
+  .popup-container .heading {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 100;
+    font-size: x-large; }
+  .popup-container #checks {
+    position: relative;
+    left: -45px; }
+  .popup-container li {
+    list-style: none; }
+  .popup-container #issue-form {
+    color: #4d4d4d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24.4em; }
+  .popup-container #details {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+  .popup-container .desc {
+    position: relative;
+    top: -65px; }
+  .popup-container .add-label {
+    position: relative;
+    top: -25px; }
+  .popup-container #labels {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .popup-container input {
+    border: 1px solid #dadada; }
+  .popup-container input:focus {
+    outline: none; }
+  .popup-container textarea {
+    border: 1px solid #dadada; }
+  .popup-container textarea:focus {
+    outline: none; }

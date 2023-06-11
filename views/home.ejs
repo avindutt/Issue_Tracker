@@ -3,13 +3,14 @@
 <div id="container">
   
    <% for(i of project){ %>
-      <div id="items">
+      <a href="/projectdetails/<%=i.id%>"><div id="items">
 
         <p id="title"> <%= i.name %> </p>
         <p id="author"> created by <%= i.author %> </p>
         <p id="desc"> <%= i.description %> </p>
          
       </div>
+      </a>
    <% } %>
    
 </div>

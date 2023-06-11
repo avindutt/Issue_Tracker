@@ -6,6 +6,8 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start; }
+  #container a {
+    text-decoration: none; }
   #container #items {
     color: white;
     background: linear-gradient(to left, grey, black);

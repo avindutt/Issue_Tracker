@@ -9,5 +9,5 @@ module.exports.index = async function(req, res){
 
     console.log('********', project);
 
-    return res.redirect('back');
+    return res.redirect('/');
 }

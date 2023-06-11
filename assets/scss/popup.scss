@@ -1,0 +1,74 @@
+.popup-container{
+    margin-top: 3em;
+    margin-left: 2em;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 0, 0.823);
+    height: 32em;
+    width: 22em;
+    padding: 10px;
+
+    .heading{
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        font-weight: 100;
+        font-size: x-large;
+    }
+
+    #checks{
+        position: relative;
+        left: -45px;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    #issue-form{
+        color: rgb(77, 77, 77);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 24.4em;
+
+    }
+
+        #details{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        
+        .desc{
+            position: relative;
+            top: -65px;
+        }
+
+        .add-label{
+            position: relative;
+            top: -25px;
+        }
+
+        #labels{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+        input{
+            border: 1px solid rgb(218, 218, 218);
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        textarea{
+            border: 1px solid rgb(218, 218, 218);
+        }
+
+        textarea:focus{
+            outline: none;
+        }
+}

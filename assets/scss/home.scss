@@ -8,6 +8,10 @@
     flex-direction: column;
     justify-content: flex-start;
 
+    a{
+        text-decoration: none;
+    }
+
     #items {
         color: white;
         background: linear-gradient(to left, grey, black);
