@@ -5,7 +5,9 @@
   background-color: rgba(255, 255, 0, 0.823);
   height: 32em;
   width: 22em;
-  padding: 10px; }
+  padding: 10px;
+  position: absolute;
+  top: 6.2rem; }
   .popup-container .heading {
     background-color: black;
     color: whitesmoke;
@@ -46,3 +48,18 @@
     border: 1px solid #dadada; }
   .popup-container textarea:focus {
     outline: none; }
+  .popup-container #submit-btn {
+    position: relative;
+    left: 10em;
+    top: 1em;
+    width: 7em;
+    border: none;
+    color: white;
+    padding: 7px;
+    background-color: black; }
+  .popup-container #submit-btn:hover {
+    cursor: pointer;
+    background-color: #4f8400;
+    letter-spacing: 3px;
+    transition: all ease 1s;
+    text-transform: uppercase; }

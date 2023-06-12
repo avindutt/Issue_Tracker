@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/css/issue.css">
+
+<div id="issue-bar">
+    <span><% for(label of issue.labels) { %>
+            <span id="labels"><%=label%></span>
+        <% } %>
+    </span>
+
+    <div id="issue-details">
+        <div id="title"><%= issue.title %></div>
+        <div id="author">Author : <%= issue.author %></div>
+        <div id="desc"><%= issue.description %></div>
+    </div>
+</div>

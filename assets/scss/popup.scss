@@ -6,6 +6,8 @@
     height: 32em;
     width: 22em;
     padding: 10px;
+    position: absolute;
+    top: 6.2rem;
 
     .heading{
         background-color: black;
@@ -70,5 +72,24 @@
 
         textarea:focus{
             outline: none;
+        }
+
+        #submit-btn {
+            position: relative;
+            left: 10em;
+            top: 1em;
+            width: 7em;
+            border: none;
+            color: white;
+            padding: 7px;
+            background-color: black;
+        }
+
+        #submit-btn:hover{
+            cursor: pointer;
+            background-color: rgb(79, 132, 0);
+            letter-spacing: 3px;
+            transition: all ease 1s;
+            text-transform: uppercase;
         }
 }

@@ -9,5 +9,6 @@ const createIssue = require('../controller/createIssue');
 router.get('/:id', projectDetails.index);
 router.get('/:id/popup', projectDetails.showPopup);
 router.post('/:id/popup/createissue', createIssue.index);
+router.get('/:id/filter', createIssue.filterIssues);
 
 module.exports = router;

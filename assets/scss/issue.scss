@@ -1,0 +1,45 @@
+#issue-bar{
+    height: 10em;
+    background-color: rgb(201, 41, 41);
+    margin-bottom: 2px;
+    color: white;
+    margin-top: 5px;
+
+    #labels{
+        background-color: rgb(11, 11, 154);
+        border-radius: 5px;
+        padding: 4px;
+        position: relative;
+        top: 10px;
+        left: 5px;
+    }
+
+    #issue-details{
+        padding: 5px;
+        height: 70%;
+        position: relative;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        #title{
+            padding: 4px;
+            letter-spacing: 3px;
+            font-weight: 100;
+            font-size: x-large;
+            background: radial-gradient( circle, #eee, black);
+            background-position: 10px 20px;
+        }
+
+        #author {
+            color: rgb(196, 196, 196);
+        }
+
+        #desc{
+            font-family: 'Gill Sans', sans-serif;
+        }
+    }
+}

@@ -7,7 +7,7 @@
 </div>
 
 <% if(!showPopup){ %>
-<button><a href="<%=project.id%>/popup">Click Me</a></button>
+<button id="issue-btn"><a href="/projectdetails/<%=project.id%>/popup" >Create Issue</a></button>
 <% } %>
 
 <link rel="stylesheet" href="/css/popup.css">
@@ -69,10 +69,43 @@
                 </div>
 
                 <div>
-                    <button type="submit" class="close-btn">Submit</button>
+                    <button id="submit-btn" type="submit" class="close-btn">Submit</button>
                 </div>
                     
             </form>
 
     </div>
 <% } %>
+
+<div id="filter-sort">
+
+<form action="/projectdetails/<%= project._id %>/filter" method="get">
+  <label>
+    <input type="radio" id="filterTitle" name="filter" value="Title">
+    Title
+  </label>
+  
+  <label>
+    <input type="radio" id="filterAuthor" name="filter" value="Author">
+    Author
+  </label>
+  
+  <label>
+    <input type="radio" id="filterDescription" name="filter" value="Description">
+    Description
+  </label>
+
+  <button type="submit">Apply Filter</button>
+</form>
+  
+</div>
+
+<div id="<%= showPopup? 'pending-issues' : 'pending-issue' %>">
+
+  <% const issues = filteredIssues || project.issue %>
+  <% for (issue of project.issue) { %>
+
+    <%- include('_issue') -%>
+
+  <% } %>  
+</div>

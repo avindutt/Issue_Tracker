@@ -1,8 +1,8 @@
 #container {
   height: auto;
   width: 40rem;
-  position: absolute;
-  top: 40%;
+  position: relative;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -25,3 +25,66 @@
       letter-spacing: 1px;
       font-size: larger;
       color: white; }
+
+#pending-issues {
+  margin-top: 10px;
+  height: max-content;
+  width: 36.8em;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 19em;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+#issue-btn {
+  position: absolute;
+  top: 10.4em;
+  left: 2rem;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(to left, black, #c6c6c6); }
+  #issue-btn a {
+    text-decoration: none;
+    font-size: large;
+    color: white; }
+
+#pending-issue {
+  margin-top: 10px;
+  height: auto;
+  width: 36.8em;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 19em;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+#filter-sort {
+  width: 9em;
+  border-radius: 7px;
+  padding: 9px;
+  background-color: #4949e4;
+  position: absolute;
+  color: white;
+  right: 2.4rem;
+  top: 10rem; }
+  #filter-sort form {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: space-around; }
+  #filter-sort button {
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: medium;
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    height: 3em;
+    background-color: white; }
