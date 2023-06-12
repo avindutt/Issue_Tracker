@@ -1,5 +1,5 @@
 #issue-bar{
-    height: 10em;
+    height: 10rem;
     background-color: rgb(201, 41, 41);
     margin-bottom: 2px;
     color: white;
@@ -15,13 +15,14 @@
     }
 
     #issue-details{
+        flex-grow: 1;
         padding: 5px;
         height: 70%;
         position: relative;
         top: 20px;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
 

@@ -1,5 +1,5 @@
 #issue-bar {
-  height: 10em;
+  height: 10rem;
   background-color: #c92929;
   margin-bottom: 2px;
   color: white;
@@ -12,13 +12,13 @@
     top: 10px;
     left: 5px; }
   #issue-bar #issue-details {
+    flex-grow: 1;
     padding: 5px;
     height: 70%;
     position: relative;
     top: 20px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
     #issue-bar #issue-details #title {

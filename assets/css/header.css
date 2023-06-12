@@ -7,22 +7,33 @@
   font-size: xx-large; }
   #layout-header .navbar div {
     margin: 2.5rem; }
-  #layout-header .navbar #logo {
-    color: white; }
-    #layout-header .navbar #logo a {
-      text-decoration: none;
-      font-size: xx-large;
-      color: white; }
+  #layout-header .navbar #logo a {
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+    padding: 5px; }
+  #layout-header .navbar #logo a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding: 5px;
+    transition: all ease-in-out 0.3s; }
   #layout-header .navbar button {
     border: none;
     height: 3em;
     width: 12em;
     background-color: black;
     cursor: pointer; }
+    #layout-header .navbar button a {
+      color: white; }
+  #layout-header .navbar button:hover {
+    background-color: white;
+    transition: all ease-in-out 0.3s; }
+    #layout-header .navbar button:hover a {
+      color: black; }
   #layout-header .navbar a {
     text-decoration: none;
-    font-size: large;
-    color: white; }
+    font-size: large; }
 
 body {
   font-family: sans-serif;

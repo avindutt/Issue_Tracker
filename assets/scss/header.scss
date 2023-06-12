@@ -12,12 +12,20 @@
         }
 
         #logo{
-            color: white;
                 a{
                 text-decoration: none;
                 font-size: xx-large;
                 color: white;
+                padding: 5px;
             }
+        }
+
+        #logo a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 3px;
+            padding: 5px;
+            transition: all ease-in-out 0.3s;
         }
 
         button{
@@ -26,12 +34,23 @@
             width: 12em;
             background-color: black;
             cursor: pointer;
+
+            a{
+                color: white;
+            }
+        }
+
+        button:hover{
+            background-color: white;
+            transition: all ease-in-out 0.3s;
+            a{
+                color: rgb(0, 0, 0);
+            }
         }
 
         a{
             text-decoration: none;
             font-size: large;
-            color: white;
         }
     }
 }
