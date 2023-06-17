@@ -38,6 +38,8 @@ module.exports.filterIssues = async function(req, res) {
         filteredIssues = filteredIssues.sort((a, b) => a.title.localeCompare(b.title));
       } else if (filterOption === 'Author') {
         filteredIssues = filteredIssues.sort((a, b) => a.author.localeCompare(b.author));
+      } else if (filterOption === 'Description') {
+        filteredIssues = filteredIssues.sort((a, b) => a.description.localeCompare(b.description));
       }
   
       res.render('projectDetails', {

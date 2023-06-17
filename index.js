@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 const app = express();
 
-configDotenv.config();
+dotenv.config();
 const port = 8000;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');

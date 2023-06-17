@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DBURL);
+mongoose.connect('mongodb://0.0.0.0/issue_tracker');
 
 const db = mongoose.connection;
 
