@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://0.0.0.0/issue_tracker');
+const DB = 'mongodb+srv://avindutt2369:38WZBlUj3I72W1A7@cluster2.nebyg0s.mongodb.net/';
+
+mongoose.connect(DB).then(()=> {
+    console.log('connection successful');
+}).catch((err)=> console.log('no connection'));
 
 const db = mongoose.connection;
 
