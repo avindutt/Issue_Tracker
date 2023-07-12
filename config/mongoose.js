@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const DB = 'mongodb+srv://avindutt2369:38WZBlUj3I72W1A7@cluster2.nebyg0s.mongodb.net/';
+mongoose.connect(process.env.DBURL);
 
-mongoose.connect(DB).then(()=> {
-    console.log('connection successful');
-}).catch((err)=> console.log('no connection'));
+// mongoose.connect(DB).then(()=> {
+//     console.log('connection successful');
+// }).catch((err)=> console.log('no connection'));
 
 const db = mongoose.connection;
 

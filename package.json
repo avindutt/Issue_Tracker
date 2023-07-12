@@ -20,5 +20,8 @@
     "node-sass-middleware": "^1.0.1",
     "request": "^2.88.2",
     "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14 <15"
   }
 }
