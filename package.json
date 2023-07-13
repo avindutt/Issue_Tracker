@@ -16,8 +16,6 @@
     "express-ejs-layouts": "^2.5.1",
     "middleware": "^1.0.0",
     "mongoose": "^6.8.2",
-    "node-sass": "^9.0.0",
-    "node-sass-middleware": "^1.0.1",
     "request": "^2.88.2",
     "uuid": "^9.0.0"
   },

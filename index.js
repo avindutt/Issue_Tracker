@@ -10,15 +10,15 @@ const db = require('./config/mongoose');
 
 app.use(express.urlencoded());
 
-const sassMiddleware = require('node-sass-middleware');
+// const sassMiddleware = require('node-sass-middleware');
 
-app.use(sassMiddleware({
-    src: './assets/scss',
-    dest: './assets/css',
-    debug: true,
-    outputStyle: 'extended',
-    prefix: '/css'
-}));
+// app.use(sassMiddleware({
+//     src: './assets/scss',
+//     dest: './assets/css',
+//     debug: true,
+//     outputStyle: 'extended',
+//     prefix: '/css'
+// }));
 
 app.use(express.static('./assets'));
 
